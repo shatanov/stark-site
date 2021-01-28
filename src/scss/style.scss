@@ -1,0 +1,14 @@
+@import "mixins";
+@import "vars";
+$minWidth: 320px;
+$maxWidth: 1920px;
+
+
+@import "null";
+@import "animation";
+@import "fonts";
+@import "global";
+
+
+//HEADER
+@import "header";

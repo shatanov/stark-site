@@ -1,0 +1,148 @@
+.header{
+
+}
+
+.header__container{
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__wrapper{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo{
+  max-width: 200px;
+
+  & img{
+    width: 100%;
+  }
+}
+
+.header__content{
+  padding-top: 40px;
+  max-width: 1012px;
+  display: flex;
+  height: 100px;
+}
+
+.content__card{
+  color: #000000;
+  margin-right: 50px;
+
+  .card__title{
+    margin-bottom: 11px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    max-width: 300px;
+    border-bottom: 2px solid #DB0000;
+  }
+
+  .card__text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+}
+
+.content__social{
+  display: flex;
+  margin-right: 50px;
+  .social__wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    .social__img{
+      width: 100%;
+      margin-right: 10px;
+      & img{
+        max-width: 100%;
+      }
+      &:hover{
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.content__file{
+  .file__wrapper{
+    display: flex;
+  }
+  .file__img{
+    max-width: 100%;
+    margin-right: 21px;
+
+    & img{
+      width: 100%;
+    }
+    &:hover{
+      opacity: 0.4;
+    }
+  }
+  .file__text{
+    max-width: 100px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #292F36;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.header__content--wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__nav{
+  display: flex;
+  background-color: #DBDBDB;
+  .nav{
+    width: 100%;
+  }
+  .nav-ul{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & li{
+      //width: 150px;
+      text-align: center;
+    }
+  }
+
+  .nav__link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: #000000;
+
+    &:hover{
+      text-decoration: none;
+      color: #BF0000;
+      font-weight: 700;
+    }
+    &:focus{
+      text-decoration: none;
+      color: #BF0000;
+      font-weight: 700;
+    }
+  }
+}
