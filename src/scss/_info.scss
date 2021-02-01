@@ -11,6 +11,7 @@
   margin-top: 150px;
 
   .info__title--block{
+    max-width: 890px;
     background: rgba(0, 0, 0, 0.55);
     background-blend-mode: multiply;
     .info__title{
@@ -188,4 +189,93 @@
 .info__img-car{
   top: -260px;
   position: absolute;
+}
+
+
+//Media
+
+@media (max-width: 1380px) {
+  .info__title{
+    font-size: 55px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .info__title{
+    font-size: 45px !important;
+  }
+
+  .car__img--wrapper{
+    display: none;
+  }
+
+  .btn__wrapper{
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .info__btn{
+    width: 400px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .info__title{
+    font-size: 35px !important;
+    text-align: center;
+  }
+
+  .info__select{
+    margin-top: 50px;
+    width: 400px;
+    height: 50px;
+  }
+
+  .info__btn--wrapper{
+    margin-top: 150px;
+  }
+
+  .btn__wrapper{
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .info__btn{
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .info__title{
+    font-weight: 700;
+  }
+
+  .info__title--block{
+    display: flex;
+    justify-content: center;
+    width: 80% !important;
+  }
+
+  .info__select{
+    margin-top: 50px;
+    width: 400px;
+    height: 50px;
+  }
+
+  .info__btn--wrapper{
+    margin-top: 150px;
+  }
+
+  .btn__wrapper{
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .info__btn{
+    width: 400px;
+  }
 }

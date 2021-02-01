@@ -225,6 +225,7 @@
 @media (max-width: 990px) {
   .menu-burger__header {
     position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     width: 60px;
@@ -239,6 +240,7 @@
     width: 40px;
     position: absolute;
     background: #515758;
+    z-index: 10;
     margin: 0 auto;
     top: 35px;
   }
@@ -257,7 +259,7 @@
 
 
   .open-menu{
-    z-index: 10;
+    z-index: 11;
     margin-top: 0;
     top: -35px;
   }
@@ -300,7 +302,6 @@
   }
 
   .header__mobile--nav{
-
     .mobile__nav{
       display: flex;
       flex-direction: column;
@@ -308,6 +309,7 @@
       justify-content: center;
       background-color: #DBDBDB;
       width: 100vw;
+      height: 100%;
       z-index: 10;
       position: fixed;
       left: 0;
@@ -342,16 +344,12 @@
       }
     }
     .mobile__social--wrapper{
-      position: fixed;
-      left: 0;
-      top: 450px;
+      margin-bottom: 150px;
       z-index: 10;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
-      width: 100vw;
-      height: 40px;
 
       .social__img{
         margin-right: 10px;
@@ -364,16 +362,12 @@
     }
 
     .mobile__file--wrapper{
-      position: fixed;
-      left: 0;
-      top: 330px;
       z-index: 10;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100vw;
-      height: 100px;
+      margin-bottom: 40px;
       .file__img{
         &:hover{
           opacity: 0.6;
