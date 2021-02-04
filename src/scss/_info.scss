@@ -1,5 +1,5 @@
 .info{
-  background-image: url("../img/bg/info__bg.png");
+  background-image: url("../img/bg/info__bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,7 +256,7 @@
   .info__title--block{
     display: flex;
     justify-content: center;
-    width: 80% !important;
+    width: 100% !important;
   }
 
   .info__select{
@@ -279,3 +279,34 @@
     width: 400px;
   }
 }
+
+@media (max-width: 445px) {
+  .info__title{
+    font-size: 30px !important;
+  }
+
+  .info__select{
+    width: 300px;
+  }
+
+  .info__btn{
+    width: 300px;
+  }
+}
+
+@media (max-width: 355px) {
+  .info__title{
+    font-size: 25px !important;
+  }
+
+  .info__select{
+    width: 250px;
+  }
+
+  .info__btn{
+    width: 250px;
+  }
+}
+
+
+

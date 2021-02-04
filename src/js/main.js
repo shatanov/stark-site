@@ -15,6 +15,7 @@ const navMenuFunction = () => {
   mobileMenu.classList.contains('menu-active')
     ? mobileMenu.classList.remove('menu-active')
     : mobileMenu.classList.add('menu-active');
+
 }
 
 menuBtn.addEventListener('click', () => {
