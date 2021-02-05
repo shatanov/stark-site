@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $('.services__slider').slick({
-    arrows:true, // показать стрелки
-    dots:false, // не показывать точки
-    slidesToShow: 4, // показывать по 3 слайда
-    autoplay:true, // автоматическое проигрывание слайдов
+    arrows:true,
+    dots:false,
+    slidesToShow: 4,
+    autoplay:true,
     nextArrow: '<div class="prev"></div>',
     prevArrow: '<div class="next"></div>',
     responsive:[
@@ -24,10 +24,10 @@ $(document).ready(function(){
     ]
   });
   $('.pluses__slider').slick({
-    arrows:true, // показать стрелки
-    dots:false, // не показывать точки
-    slidesToShow: 4, // показывать по 3 слайда
-    autoplay:true, // автоматическое проигрывание слайдов
+    arrows:true,
+    dots:false,
+    slidesToShow: 4,
+    autoplay:true,
     nextArrow: '<div class="prev white"></div>',
     prevArrow: '<div class="next white"></div>',
     responsive:[
@@ -47,5 +47,30 @@ $(document).ready(function(){
       }
     ]
   });
-
+  $('.news__slider').slick({
+    arrows:true,
+    vertical: true,
+    verticalSwiping: true,
+    dots:false,
+    slidesToShow: 2,
+    autoplay:true,
+    nextArrow: '<div class="prev"></div>',
+    prevArrow: '<div class="next"></div>',
+    responsive:[
+      {
+        breakpoint: 768,
+        settings: {
+          arrows:false,
+          slidesToShow:2
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          arrows:false,
+          slidesToShow:1
+        }
+      }
+    ]
+  });
 });

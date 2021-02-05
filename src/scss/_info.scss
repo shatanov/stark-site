@@ -57,6 +57,19 @@
     }
   }
 }
+
+.select__title{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  padding: 13px 16px;
+}
+
 .info__select__title {
   display: flex;
   align-items: center;
