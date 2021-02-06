@@ -7,6 +7,19 @@ import  './functions/stop-scroll';
 const menuBtn = document.querySelector('.menu-burger__header');
 const mobileMenu = document.querySelector('.header__mobile--nav');
 const navLink = document.querySelectorAll('.mobile__nav__link');
+const infoSelect = document.querySelectorAll('.info__select');
+const selectContent = document.querySelectorAll('.select__content');
+
+const viewSelectContent = (index) => {
+  if (selectContent[index].classList.contains('select__open')){
+    selectContent[index].classList.remove('select__open');
+    selectContent[index].style.display = 'none';
+
+  } else {
+    selectContent[index].classList.add('select__open');
+    selectContent[index].style.display = 'block'
+  }
+}
 
 const navMenuFunction = () => {
   menuBtn.classList.contains('open-menu')
@@ -18,58 +31,25 @@ const navMenuFunction = () => {
 
 }
 
+
+
 menuBtn.addEventListener('click', () => {
   navMenuFunction();
 });
 
-navLink.forEach((el) => {
+navLink.forEach(el => {
   el.addEventListener('click', () => {
     navMenuFunction();
   })
 });
 
 
-const selectSingleCurrency = document.querySelector('.currency');
-const selectSingleTitleCurrency = selectSingleCurrency.querySelector('.info__select__title');
-const selectSingleLabelsCurrency = selectSingleCurrency.querySelectorAll('.info__select__label');
+infoSelect.forEach((el, index) => {
+  el.addEventListener('click', () => viewSelectContent(index))
+})
 
 
-selectSingleTitleCurrency.addEventListener('click', () => {
-    if ('active' === selectSingleCurrency.getAttribute('data-state')) {
-      selectSingleCurrency.setAttribute('data-state', '');
-    } else {
-      selectSingleCurrency.setAttribute('data-state', 'active');
-    }
-});
 
 
-// Close when click to option
-for (let i = 0; i < selectSingleLabelsCurrency.length; i++) {
-  selectSingleLabelsCurrency[i].addEventListener('click', (evt) => {
-    selectSingleTitleCurrency.textContent = evt.target.textContent;
-    selectSingleCurrency.setAttribute('data-state', '');
-  });
-}
-
-const selectSingleMetal = document.querySelector('.metal');
-const selectSingleTitleMetal = selectSingleMetal.querySelector('.info__select__title');
-const selectSingleLabelsMetal = selectSingleMetal.querySelectorAll('.info__select__label');
-
-selectSingleTitleMetal.addEventListener('click', () => {
-  if ('active' === selectSingleMetal.getAttribute('data-state')) {
-    selectSingleMetal.setAttribute('data-state', '');
-  } else {
-    selectSingleMetal.setAttribute('data-state', 'active');
-  }
-});
-
-
-// Close when click to option
-for (let i = 0; i < selectSingleLabelsMetal.length; i++) {
-  selectSingleLabelsMetal[i].addEventListener('click', (evt) => {
-    selectSingleTitleMetal.textContent = evt.target.textContent;
-    selectSingleMetal.setAttribute('data-state', '');
-  });
-}
 
 

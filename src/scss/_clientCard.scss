@@ -63,7 +63,12 @@
   .cardClient__img--wrapper{
     display: none;
   }
-
+  .clientCard{
+    width: 100%;
+  }
+  .clientCard__title {
+    text-align: center;
+  }
 }
 
 

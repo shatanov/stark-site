@@ -95,7 +95,7 @@
 }
 
 
-.next{
+.next__white{
   cursor: pointer;
   top: 50%;
   z-index: 2;
@@ -109,7 +109,7 @@
 
 }
 
-.prev{
+.prev__white{
   cursor: pointer;
   top: 43%;
   right: -5px;
@@ -124,6 +124,19 @@
 }
 
 @media (max-width: 550px){
+  .pluses__title{
+    font-size: 45px !important;
+  }
+  .slider__item{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px){
+  .pluses__title{
+    font-size: 45px !important;
+  }
   .slider__item{
     display: flex;
     justify-content: center;
