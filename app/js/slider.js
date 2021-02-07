@@ -27,7 +27,7 @@ $(document).ready(function(){
     arrows:true,
     dots:false,
     slidesToShow: 4,
-    autoplay:true,
+    autoplay:false,
     nextArrow: '<div class="prev__white"></div>',
     prevArrow: '<div class="next__white"></div>',
     responsive:[
@@ -74,6 +74,30 @@ $(document).ready(function(){
     ]
   });
   $('.reviews__slider').slick({
+    arrows:true,
+    dots:false,
+    slidesToShow: 1,
+    autoplay:true,
+    nextArrow: '<div class="prev"></div>',
+    prevArrow: '<div class="next"></div>',
+    responsive:[
+      {
+        breakpoint: 768,
+        settings: {
+          arrows:false,
+          slidesToShow:1,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          arrows:false,
+          slidesToShow:1
+        }
+      }
+    ]
+  });
+  $('.about__slider').slick({
     arrows:true,
     dots:false,
     slidesToShow: 1,

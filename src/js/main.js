@@ -9,15 +9,22 @@ const mobileMenu = document.querySelector('.header__mobile--nav');
 const navLink = document.querySelectorAll('.mobile__nav__link');
 const infoSelect = document.querySelectorAll('.info__select');
 const selectContent = document.querySelectorAll('.select__content');
+const selectorMetal = document.querySelector('.metal')
+
 
 const viewSelectContent = (index) => {
   if (selectContent[index].classList.contains('select__open')){
     selectContent[index].classList.remove('select__open');
     selectContent[index].style.display = 'none';
-
+    if (index == 0){
+      selectorMetal.style.marginTop = '0px'
+    }
   } else {
     selectContent[index].classList.add('select__open');
-    selectContent[index].style.display = 'block'
+    selectContent[index].style.display = 'block';
+    if (index == 0){
+      selectorMetal.style.marginTop = '260px'
+    }
   }
 }
 

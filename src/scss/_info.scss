@@ -30,9 +30,7 @@
 }
 
 //________________SELECT__________
-.currency{
-  z-index: 3;
-}
+
 
 .info__select {
   position: relative;
@@ -191,6 +189,7 @@
 }
 
 .info__img-car{
+  max-width: 100%;
   top: -260px;
   position: absolute;
 }

@@ -1,0 +1,50 @@
+.about__description {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.servisec__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.services__page--wrapper{
+  margin-top: 80px;
+  margin-bottom: 180px;
+}
+
+.about__priorities--wrapper {
+  .priorities__title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.21;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  .priorities__item {
+    &:before {
+      content: "—";
+      color: $accent;
+      padding-right: 5px;
+    }
+
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.21;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+}
+
+.services__page--btn{
+  margin-top: 345px;
+  display: flex;
+  align-items: flex-end;
+  width: 280px !important;
+}
