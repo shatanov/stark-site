@@ -48,20 +48,19 @@ $(document).ready(function(){
     ]
   });
   $('.news__slider').slick({
+    vertical:true,
     arrows:true,
-    vertical: true,
-    verticalSwiping: true,
     dots:false,
-    slidesToShow: 2,
+    slidesToShow: 1,
     autoplay:true,
-    nextArrow: '<div class="prev"></div>',
-    prevArrow: '<div class="next"></div>',
+    nextArrow: '<div class="prev__grey"></div>',
+    prevArrow: '<div class="next__grey"></div>',
     responsive:[
       {
         breakpoint: 768,
         settings: {
           arrows:false,
-          slidesToShow:2
+          slidesToShow:1,
         }
       },
       {
