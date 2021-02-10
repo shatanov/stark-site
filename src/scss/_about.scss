@@ -62,3 +62,38 @@
     color: #000000;
   }
 }
+
+@media (max-width: 990px) {
+  .about__title{
+    text-align: center;
+  }
+  .about__img--wrapper{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .about__text--wrapper{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about__description{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__info--wrapper{
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .about__title{
+    font-size: 35px !important;
+  }
+}

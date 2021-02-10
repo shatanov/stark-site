@@ -48,3 +48,25 @@
   align-items: flex-end;
   width: 280px !important;
 }
+
+@media (max-width: 1200px) {
+  .services__page--btn{
+    margin-top: 225px;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .services__img--wrapper {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .services__page--btn{
+    margin-top: 80px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+}
