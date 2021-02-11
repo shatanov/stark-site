@@ -54,7 +54,7 @@
   .next{
     cursor: pointer;
     top: 50%;
-    z-index: 2;
+    z-index: 1;
     left: 0;
     position: absolute;
     height: 30px;
@@ -73,7 +73,7 @@
     cursor: pointer;
     top: 48%;
     right: -5px;
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     height: 30px;
     width: 30px;
