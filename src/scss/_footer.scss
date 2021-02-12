@@ -24,6 +24,7 @@
         &:hover{
           color: #FFFFFF;
           text-decoration: none;
+          transition: all 0.4s ease;
         }
       }
     }
@@ -44,6 +45,7 @@
 
       &:hover{
         color: $accent;
+        transition: all 0.4s ease;
       }
     }
   }

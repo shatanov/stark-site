@@ -9,6 +9,7 @@ const mobileMenu = document.querySelector('.header__mobile--nav');
 const navLink = document.querySelectorAll('.mobile__nav__link');
 const infoSelect = document.querySelectorAll('.info__select');
 const selectContent = document.querySelectorAll('.select__content');
+const selectTitle = document.querySelectorAll('.select__title');
 const selectorMetal = document.querySelector('.metal');
 const body = document.querySelector('body');
 const mobileNav = document.querySelector('.mobile__nav')
@@ -19,6 +20,11 @@ const mediaHeight = window.matchMedia('(max-height: 570px)')
 
 
 const viewSelectContent = (index) => {
+  if (selectTitle[index].classList.contains('arrow__up')) {
+    selectTitle[index].classList.remove('arrow__up');
+  } else {
+    selectTitle[index].classList.add('arrow__up');
+  }
   if (selectContent[index].classList.contains('select__open')){
     selectContent[index].classList.remove('select__open');
     selectContent[index].style.display = 'none';
@@ -34,6 +40,7 @@ const viewSelectContent = (index) => {
   }
 }
 
+
 const weidthCheck = (e) => {
   if (e.matches) {
     menuBtn.classList.remove('open-menu')
@@ -45,7 +52,7 @@ const weidthCheck = (e) => {
 const heightCheck = (e) => {
   if (e.matches){
     mobileNav.style.overflowY = 'auto'
-    mobileNav.style.height = '135vh'
+    mobileNav.style.height = '125vh'
   }
 }
 
@@ -74,8 +81,7 @@ navLink.forEach(el => {
 
 
 infoSelect.forEach((el, index) => {
-  el.addEventListener('click', () => viewSelectContent(index))
-})
+  el.addEventListener('click', () => viewSelectContent(index))})
 
 
 mediaWidth.addListener(weidthCheck)
