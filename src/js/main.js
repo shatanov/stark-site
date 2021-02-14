@@ -13,11 +13,9 @@ const selectTitle = document.querySelectorAll('.select__title');
 const selectorMetal = document.querySelector('.metal');
 const body = document.querySelector('body');
 const mobileNav = document.querySelector('.mobile__nav')
-const pageWidth = window.innerWidth;
-const pageHeight = window.innerHeight;
 const mediaWidth = window.matchMedia('(min-width: 990px)')
 const mediaHeight = window.matchMedia('(max-height: 570px)')
-
+const mediaHeightSm = window.matchMedia('(max-height: 350px)')
 
 const viewSelectContent = (index) => {
   if (selectTitle[index].classList.contains('arrow__up')) {
@@ -29,13 +27,13 @@ const viewSelectContent = (index) => {
     selectContent[index].classList.remove('select__open');
     selectContent[index].style.display = 'none';
     if (index == 0){
-      selectorMetal.style.marginTop = '0px'
+      selectorMetal.style.top = '0px'
     }
   } else {
     selectContent[index].classList.add('select__open');
     selectContent[index].style.display = 'block';
     if (index == 0){
-      selectorMetal.style.marginTop = '260px'
+      selectorMetal.style.top = '220px'
     }
   }
 }
@@ -53,6 +51,13 @@ const heightCheck = (e) => {
   if (e.matches){
     mobileNav.style.overflowY = 'auto'
     mobileNav.style.height = '125vh'
+  }
+}
+
+const heightCheckSm = (e) => {
+  if (e.matches){
+    mobileNav.style.overflowY = 'auto'
+    mobileNav.style.height = '135vh'
   }
 }
 
@@ -90,6 +95,8 @@ weidthCheck(mediaWidth)
 mediaHeight.addListener(heightCheck)
 heightCheck(mediaHeight)
 
+mediaHeightSm.addListener(heightCheckSm)
+heightCheckSm(mediaHeightSm)
 
 
 
