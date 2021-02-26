@@ -8,14 +8,21 @@ $(document).ready(function(){
     prevArrow: '<div class="next"></div>',
     responsive:[
       {
-        breakpoint: 768,
+        breakpoint: 1200,
+        settings: {
+          arrows:true,
+          slidesToShow:3
+        }
+      },
+      {
+        breakpoint: 992,
         settings: {
           arrows:false,
           slidesToShow:2
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 576,
         settings: {
           arrows:false,
           slidesToShow:1
