@@ -1,7 +1,5 @@
 import './vendor/focus-visible.min.js';
 import './_vars';
-import {resizeContent} from './functions/resize';
-import {scrollTo} from './functions/smooth-scroll';
 import  './functions/stop-scroll';
 
 const menuBtn = document.querySelector('.menu-burger__header');
@@ -16,7 +14,7 @@ const mobileNav = document.querySelector('.mobile__nav')
 const mediaWidth = window.matchMedia('(min-width: 990px)')
 const mediaHeight = window.matchMedia('(max-height: 570px)')
 const mediaHeightSm = window.matchMedia('(max-height: 350px)')
-
+console.log(selectContent[0].childNodes.length);
 const viewSelectContent = (index) => {
   if (selectTitle[index].classList.contains('arrow__up')) {
     selectTitle[index].classList.remove('arrow__up');
@@ -33,7 +31,7 @@ const viewSelectContent = (index) => {
     selectContent[index].classList.add('select__open');
     selectContent[index].style.display = 'block';
     if (index == 0){
-      selectorMetal.style.top = '220px'
+      selectorMetal.style.top = `${selectContent[0].childNodes.length * 18}px`
     }
   }
 }
