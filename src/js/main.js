@@ -14,7 +14,6 @@ const mobileNav = document.querySelector('.mobile__nav')
 const mediaWidth = window.matchMedia('(min-width: 990px)')
 const mediaHeight = window.matchMedia('(max-height: 570px)')
 const mediaHeightSm = window.matchMedia('(max-height: 350px)')
-console.log(selectContent[0].childNodes.length);
 const viewSelectContent = (index) => {
   if (selectTitle[index].classList.contains('arrow__up')) {
     selectTitle[index].classList.remove('arrow__up');
@@ -31,7 +30,7 @@ const viewSelectContent = (index) => {
     selectContent[index].classList.add('select__open');
     selectContent[index].style.display = 'block';
     if (index == 0){
-      selectorMetal.style.top = `${selectContent[0].childNodes.length * 18}px`
+      selectorMetal.style.top = `${selectContent[0].childNodes.length * 18}px`;
     }
   }
 }
